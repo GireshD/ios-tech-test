@@ -13,3 +13,7 @@ Rechord is all about Audio. This test app uses AudioKit to load and play audio f
  - Refactor RechordView so it's cleaner and better structured
  - Add a Text() element above the buttons to show the name of the loaded file.
  - Make the buttons take up the available width, and give them a height of 50pts
+
+Please fork this repo and make the above changes. Feel free to refactor the code as you see fit.
+
+Have fun!
