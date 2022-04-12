@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F273B8372804899E00E74D55 /* RechordCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */; };
+		F273B8392804899E00E74D55 /* RechordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B8382804899E00E74D55 /* RechordView.swift */; };
+		F273B83B280489A100E74D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F273B83A280489A100E74D55 /* Assets.xcassets */; };
+		F273B83E280489A100E74D55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F273B83D280489A100E74D55 /* Preview Assets.xcassets */; };
+		F273B848280489A100E74D55 /* RechordCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B847280489A100E74D55 /* RechordCodingChallengeTests.swift */; };
+		F273B852280489A100E74D55 /* RechordCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B851280489A100E74D55 /* RechordCodingChallengeUITests.swift */; };
+		F273B854280489A100E74D55 /* RechordCodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B853280489A100E74D55 /* RechordCodingChallengeUITestsLaunchTests.swift */; };
+		F273B86428048A7700E74D55 /* RechordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B86328048A7700E74D55 /* RechordViewModel.swift */; };
+		F273B86628048E5E00E74D55 /* loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = F273B86528048E5E00E74D55 /* loop.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F273B844280489A100E74D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F273B82B2804899E00E74D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F273B8322804899E00E74D55;
+			remoteInfo = RechordCodingChallenge;
+		};
+		F273B84E280489A100E74D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F273B82B2804899E00E74D55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F273B8322804899E00E74D55;
+			remoteInfo = RechordCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F273B8332804899E00E74D55 /* RechordCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RechordCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordCodingChallengeApp.swift; sourceTree = "<group>"; };
+		F273B8382804899E00E74D55 /* RechordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordView.swift; sourceTree = "<group>"; };
+		F273B83A280489A100E74D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F273B83D280489A100E74D55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F273B843280489A100E74D55 /* RechordCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RechordCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F273B847280489A100E74D55 /* RechordCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordCodingChallengeTests.swift; sourceTree = "<group>"; };
+		F273B84D280489A100E74D55 /* RechordCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RechordCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F273B851280489A100E74D55 /* RechordCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		F273B853280489A100E74D55 /* RechordCodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordCodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F273B86328048A7700E74D55 /* RechordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordViewModel.swift; sourceTree = "<group>"; };
+		F273B86528048E5E00E74D55 /* loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loop.wav; sourceTree = "<group>"; };
+		F273B867280498E100E74D55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F273B8302804899E00E74D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F273B840280489A100E74D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F273B84A280489A100E74D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F273B82A2804899E00E74D55 = {
+			isa = PBXGroup;
+			children = (
+				F273B867280498E100E74D55 /* README.md */,
+				F273B8352804899E00E74D55 /* RechordCodingChallenge */,
+				F273B846280489A100E74D55 /* RechordCodingChallengeTests */,
+				F273B850280489A100E74D55 /* RechordCodingChallengeUITests */,
+				F273B8342804899E00E74D55 /* Products */,
+				F273B86B280581F300E74D55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F273B8342804899E00E74D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F273B8332804899E00E74D55 /* RechordCodingChallenge.app */,
+				F273B843280489A100E74D55 /* RechordCodingChallengeTests.xctest */,
+				F273B84D280489A100E74D55 /* RechordCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F273B8352804899E00E74D55 /* RechordCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */,
+				F273B8382804899E00E74D55 /* RechordView.swift */,
+				F273B86328048A7700E74D55 /* RechordViewModel.swift */,
+				F273B83A280489A100E74D55 /* Assets.xcassets */,
+				F273B86528048E5E00E74D55 /* loop.wav */,
+				F273B83C280489A100E74D55 /* Preview Content */,
+			);
+			path = RechordCodingChallenge;
+			sourceTree = "<group>";
+		};
+		F273B83C280489A100E74D55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F273B83D280489A100E74D55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F273B846280489A100E74D55 /* RechordCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F273B847280489A100E74D55 /* RechordCodingChallengeTests.swift */,
+			);
+			path = RechordCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		F273B850280489A100E74D55 /* RechordCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F273B851280489A100E74D55 /* RechordCodingChallengeUITests.swift */,
+				F273B853280489A100E74D55 /* RechordCodingChallengeUITestsLaunchTests.swift */,
+			);
+			path = RechordCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		F273B86B280581F300E74D55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F273B8322804899E00E74D55 /* RechordCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F273B857280489A100E74D55 /* Build configuration list for PBXNativeTarget "RechordCodingChallenge" */;
+			buildPhases = (
+				F273B82F2804899E00E74D55 /* Sources */,
+				F273B8302804899E00E74D55 /* Frameworks */,
+				F273B8312804899E00E74D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RechordCodingChallenge;
+			packageProductDependencies = (
+			);
+			productName = RechordCodingChallenge;
+			productReference = F273B8332804899E00E74D55 /* RechordCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F273B842280489A100E74D55 /* RechordCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F273B85A280489A100E74D55 /* Build configuration list for PBXNativeTarget "RechordCodingChallengeTests" */;
+			buildPhases = (
+				F273B83F280489A100E74D55 /* Sources */,
+				F273B840280489A100E74D55 /* Frameworks */,
+				F273B841280489A100E74D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F273B845280489A100E74D55 /* PBXTargetDependency */,
+			);
+			name = RechordCodingChallengeTests;
+			productName = RechordCodingChallengeTests;
+			productReference = F273B843280489A100E74D55 /* RechordCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F273B84C280489A100E74D55 /* RechordCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F273B85D280489A100E74D55 /* Build configuration list for PBXNativeTarget "RechordCodingChallengeUITests" */;
+			buildPhases = (
+				F273B849280489A100E74D55 /* Sources */,
+				F273B84A280489A100E74D55 /* Frameworks */,
+				F273B84B280489A100E74D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F273B84F280489A100E74D55 /* PBXTargetDependency */,
+			);
+			name = RechordCodingChallengeUITests;
+			productName = RechordCodingChallengeUITests;
+			productReference = F273B84D280489A100E74D55 /* RechordCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F273B82B2804899E00E74D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F273B8322804899E00E74D55 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					F273B842280489A100E74D55 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F273B8322804899E00E74D55;
+					};
+					F273B84C280489A100E74D55 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F273B8322804899E00E74D55;
+					};
+				};
+			};
+			buildConfigurationList = F273B82E2804899E00E74D55 /* Build configuration list for PBXProject "RechordCodingChallenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F273B82A2804899E00E74D55;
+			packageReferences = (
+				F273B8682805791600E74D55 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = F273B8342804899E00E74D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F273B8322804899E00E74D55 /* RechordCodingChallenge */,
+				F273B842280489A100E74D55 /* RechordCodingChallengeTests */,
+				F273B84C280489A100E74D55 /* RechordCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F273B8312804899E00E74D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F273B86628048E5E00E74D55 /* loop.wav in Resources */,
+				F273B83E280489A100E74D55 /* Preview Assets.xcassets in Resources */,
+				F273B83B280489A100E74D55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F273B841280489A100E74D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F273B84B280489A100E74D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F273B82F2804899E00E74D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F273B8392804899E00E74D55 /* RechordView.swift in Sources */,
+				F273B8372804899E00E74D55 /* RechordCodingChallengeApp.swift in Sources */,
+				F273B86428048A7700E74D55 /* RechordViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F273B83F280489A100E74D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F273B848280489A100E74D55 /* RechordCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F273B849280489A100E74D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F273B854280489A100E74D55 /* RechordCodingChallengeUITestsLaunchTests.swift in Sources */,
+				F273B852280489A100E74D55 /* RechordCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F273B845280489A100E74D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F273B8322804899E00E74D55 /* RechordCodingChallenge */;
+			targetProxy = F273B844280489A100E74D55 /* PBXContainerItemProxy */;
+		};
+		F273B84F280489A100E74D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F273B8322804899E00E74D55 /* RechordCodingChallenge */;
+			targetProxy = F273B84E280489A100E74D55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F273B855280489A100E74D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F273B856280489A100E74D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F273B858280489A100E74D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RechordCodingChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 58MFYYLMT8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowledgeisporridge.RechordCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F273B859280489A100E74D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RechordCodingChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 58MFYYLMT8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowledgeisporridge.RechordCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F273B85B280489A100E74D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58MFYYLMT8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowledgeisporridge.RechordCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RechordCodingChallenge.app/RechordCodingChallenge";
+			};
+			name = Debug;
+		};
+		F273B85C280489A100E74D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58MFYYLMT8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowledgeisporridge.RechordCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RechordCodingChallenge.app/RechordCodingChallenge";
+			};
+			name = Release;
+		};
+		F273B85E280489A100E74D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58MFYYLMT8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowledgeisporridge.RechordCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RechordCodingChallenge;
+			};
+			name = Debug;
+		};
+		F273B85F280489A100E74D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58MFYYLMT8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knowledgeisporridge.RechordCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RechordCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F273B82E2804899E00E74D55 /* Build configuration list for PBXProject "RechordCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F273B855280489A100E74D55 /* Debug */,
+				F273B856280489A100E74D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F273B857280489A100E74D55 /* Build configuration list for PBXNativeTarget "RechordCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F273B858280489A100E74D55 /* Debug */,
+				F273B859280489A100E74D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F273B85A280489A100E74D55 /* Build configuration list for PBXNativeTarget "RechordCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F273B85B280489A100E74D55 /* Debug */,
+				F273B85C280489A100E74D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F273B85D280489A100E74D55 /* Build configuration list for PBXNativeTarget "RechordCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F273B85E280489A100E74D55 /* Debug */,
+				F273B85F280489A100E74D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F273B8682805791600E74D55 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = F273B82B2804899E00E74D55 /* Project object */;
+}
