@@ -11,11 +11,18 @@ import AudioKit
 class RechordViewModel {
     var engine: AudioEngine = AudioEngine()
     var mixer: Mixer = Mixer()
-    
+
     var player: AudioPlayer!
+    private var files: [URL] = []
         
     func loadAudio(from url: URL) {
+        if files.contains(url){
+            return
+        }else{
+            files.append(url)
+        }
         player = AudioPlayer(url: url, buffered: false)
+        player.isLooping = true
         mixer.addInput(player)
     }
     
