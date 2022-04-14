@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EC3C8422808285100AFC5EB /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6EC3C8412808285100AFC5EB /* AudioKit */; };
 		F273B8372804899E00E74D55 /* RechordCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */; };
 		F273B8392804899E00E74D55 /* RechordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B8382804899E00E74D55 /* RechordView.swift */; };
 		F273B83B280489A100E74D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F273B83A280489A100E74D55 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC3C8422808285100AFC5EB /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +162,7 @@
 			);
 			name = RechordCodingChallenge;
 			packageProductDependencies = (
+				6EC3C8412808285100AFC5EB /* AudioKit */,
 			);
 			productName = RechordCodingChallenge;
 			productReference = F273B8332804899E00E74D55 /* RechordCodingChallenge.app */;
@@ -621,6 +624,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6EC3C8412808285100AFC5EB /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F273B8682805791600E74D55 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F273B82B2804899E00E74D55 /* Project object */;
 }
