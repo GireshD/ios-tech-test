@@ -63,7 +63,11 @@ struct RechordView: View {
                     }
                 })
                 {
-                    Text("PLAY OR STOP")
+                    if isPlaying{
+                        Text("STOP")
+                    }else{
+                        Text("PLAY")
+                    }
                 }
                 .font(.system(size: 16, weight: .bold, design: .rounded))
                 .foregroundColor(Color("Button_Foreground"))
