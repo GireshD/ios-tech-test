@@ -23,66 +23,10 @@ struct RechordView: View {
                 
                 Text("Rechord is all about Audio. This test app uses AudioKit to load and play audio files... but it's just not very good. It has problems. Please, Fix Me!").multilineTextAlignment(.leading).font(.body)
                 
-                if fileURL.absoluteString.count>8{
-                    Text(fileURL.deletingPathExtension().lastPathComponent).multilineTextAlignment(.center).font(.caption)
-                }
+                fileNameLbl
                 
-                VStack(spacing: 15){
-                    Button(action: {
-                        showFileBrowser = true
-                    })
-                    {
-                        Text("BROWSE FILES...")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .frame( height: 50)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
-                    .foregroundColor(Color("Button_Foreground"))
-                    .background(Color("Button_Background"))
-                    .cornerRadius(25)
-                    
-                    Button(action: {
-                        fileURL = Bundle.main.url(forResource: "loop", withExtension: "wav")!
-                        viewModel.loadAudio(from: fileURL)
-                        viewModel.looping()
-                        isPlaying = false
-                    })
-                    {
-                        Text("LOAD A TEST LOOP")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .frame( height: 50)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
-                    .foregroundColor(Color("Button_Foreground"))
-                    .background(Color("Button_Background"))
-                    .cornerRadius(25)
-                    
-                    
-                    Button(action: {
-                        isPlaying.toggle()
-                        
-                        if isPlaying {
-                            viewModel.play()
-                        }
-                        else {
-                            viewModel.stop()
-                        }
-                    })
-                    {
-                        if isPlaying{
-                            Text("STOP")
-                                .frame(maxWidth: .infinity)
-                        }else{
-                            Text("PLAY")
-                                .frame(maxWidth: .infinity)
-                        }
-                    }
-                    .frame( height: 50)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
-                    .foregroundColor(Color("Button_Foreground"))
-                    .background(Color("Button_Background"))
-                    .cornerRadius(25)
-                }
+                buttons
+                
             }
             .padding(30)
             .onAppear {
@@ -108,6 +52,49 @@ struct RechordView: View {
                             Log(error.localizedDescription, type: .error)
                         }
                     }
+        }
+    }
+}
+
+extension RechordView{
+    
+    private var fileNameLbl: some View{
+        HStack{
+            if fileURL.absoluteString.count>8{
+                Text(fileURL.deletingPathExtension().lastPathComponent).multilineTextAlignment(.center).font(.caption)
+            }
+        }
+    }
+    
+    private var buttons: some View {
+        VStack(spacing: 15){
+            
+            CustomButton(title: "BROWSE FILES...")
+                .onTapGesture {
+                    showFileBrowser = true
+                }
+            
+            
+            CustomButton(title: "LOAD A TEST LOOP")
+                .onTapGesture {
+                    fileURL = Bundle.main.url(forResource: "loop", withExtension: "wav")!
+                    viewModel.loadAudio(from: fileURL)
+                    viewModel.looping()
+                    isPlaying = false
+                }
+            
+            CustomButton(title: (isPlaying == true ?  "STOP" : "Play"))
+                .onTapGesture {
+                    isPlaying.toggle()
+                    if isPlaying {
+                        viewModel.play()
+                    }
+                    else {
+                        viewModel.stop()
+                    }
+                }
+            
+            
         }
     }
 }

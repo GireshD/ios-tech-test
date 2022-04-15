@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6EC3C8422808285100AFC5EB /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6EC3C8412808285100AFC5EB /* AudioKit */; };
+		6EC89A722809BEE0002DB04E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC89A712809BEE0002DB04E /* CustomButton.swift */; };
 		F273B8372804899E00E74D55 /* RechordCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */; };
 		F273B8392804899E00E74D55 /* RechordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273B8382804899E00E74D55 /* RechordView.swift */; };
 		F273B83B280489A100E74D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F273B83A280489A100E74D55 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EC89A712809BEE0002DB04E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F273B8332804899E00E74D55 /* RechordCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RechordCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordCodingChallengeApp.swift; sourceTree = "<group>"; };
 		F273B8382804899E00E74D55 /* RechordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechordView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				F273B8362804899E00E74D55 /* RechordCodingChallengeApp.swift */,
 				F273B8382804899E00E74D55 /* RechordView.swift */,
+				6EC89A712809BEE0002DB04E /* CustomButton.swift */,
 				F273B86328048A7700E74D55 /* RechordViewModel.swift */,
 				F273B83A280489A100E74D55 /* Assets.xcassets */,
 				F273B86528048E5E00E74D55 /* loop.wav */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC89A722809BEE0002DB04E /* CustomButton.swift in Sources */,
 				F273B8392804899E00E74D55 /* RechordView.swift in Sources */,
 				F273B8372804899E00E74D55 /* RechordCodingChallengeApp.swift in Sources */,
 				F273B86428048A7700E74D55 /* RechordViewModel.swift in Sources */,
