@@ -17,11 +17,15 @@ struct RechordView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 10) {
+            VStack(spacing: 15) {
                 Text("RECHORD TEST")
                     .font(.headline)
                 
                 Text("Rechord is all about Audio. This test app uses AudioKit to load and play audio files... but it's just not very good. It has problems. Please, Fix Me!").multilineTextAlignment(.leading).font(.body)
+                
+                if fileURL.absoluteString.count>8{
+                    Text(fileURL.deletingPathExtension().lastPathComponent).multilineTextAlignment(.center).font(.caption)
+                }
                 
                 Button(action: {
                     showFileBrowser = true
@@ -35,8 +39,8 @@ struct RechordView: View {
                 .cornerRadius(7)
                 
                 Button(action: {
-                    let file = Bundle.main.url(forResource: "loop", withExtension: "wav")!
-                    viewModel.loadAudio(from: file)
+                    fileURL = Bundle.main.url(forResource: "loop", withExtension: "wav")!
+                    viewModel.loadAudio(from: fileURL)
                     viewModel.looping()
                     isPlaying = false
                 })
