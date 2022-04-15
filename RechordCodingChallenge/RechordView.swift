@@ -27,52 +27,62 @@ struct RechordView: View {
                     Text(fileURL.deletingPathExtension().lastPathComponent).multilineTextAlignment(.center).font(.caption)
                 }
                 
-                Button(action: {
-                    showFileBrowser = true
-                })
-                {
-                    Text("BROWSE FILES...")
-                }
-                .font(.system(size: 16, weight: .bold, design: .rounded))
-                .foregroundColor(Color("Button_Foreground"))
-                .background(Color("Button_Background"))
-                .cornerRadius(7)
-                
-                Button(action: {
-                    fileURL = Bundle.main.url(forResource: "loop", withExtension: "wav")!
-                    viewModel.loadAudio(from: fileURL)
-                    viewModel.looping()
-                    isPlaying = false
-                })
-                {
-                    Text("LOAD A TEST LOOP")
-                }
-                .font(.system(size: 16, weight: .bold, design: .rounded))
-                .foregroundColor(Color("Button_Foreground"))
-                .background(Color("Button_Background"))
-                .cornerRadius(7)
-                
-                Button(action: {
-                    isPlaying.toggle()
+                VStack(spacing: 15){
+                    Button(action: {
+                        showFileBrowser = true
+                    })
+                    {
+                        Text("BROWSE FILES...")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .frame( height: 50)
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .foregroundColor(Color("Button_Foreground"))
+                    .background(Color("Button_Background"))
+                    .cornerRadius(25)
                     
-                    if isPlaying {
-                        viewModel.play()
+                    Button(action: {
+                        fileURL = Bundle.main.url(forResource: "loop", withExtension: "wav")!
+                        viewModel.loadAudio(from: fileURL)
+                        viewModel.looping()
+                        isPlaying = false
+                    })
+                    {
+                        Text("LOAD A TEST LOOP")
+                            .frame(maxWidth: .infinity)
                     }
-                    else {
-                        viewModel.stop()
+                    .frame( height: 50)
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .foregroundColor(Color("Button_Foreground"))
+                    .background(Color("Button_Background"))
+                    .cornerRadius(25)
+                    
+                    
+                    Button(action: {
+                        isPlaying.toggle()
+                        
+                        if isPlaying {
+                            viewModel.play()
+                        }
+                        else {
+                            viewModel.stop()
+                        }
+                    })
+                    {
+                        if isPlaying{
+                            Text("STOP")
+                                .frame(maxWidth: .infinity)
+                        }else{
+                            Text("PLAY")
+                                .frame(maxWidth: .infinity)
+                        }
                     }
-                })
-                {
-                    if isPlaying{
-                        Text("STOP")
-                    }else{
-                        Text("PLAY")
-                    }
+                    .frame( height: 50)
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .foregroundColor(Color("Button_Foreground"))
+                    .background(Color("Button_Background"))
+                    .cornerRadius(25)
                 }
-                .font(.system(size: 16, weight: .bold, design: .rounded))
-                .foregroundColor(Color("Button_Foreground"))
-                .background(Color("Button_Background"))
-                .cornerRadius(7)
             }
             .padding(30)
             .onAppear {
