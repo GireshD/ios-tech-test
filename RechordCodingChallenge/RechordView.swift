@@ -13,6 +13,7 @@ struct RechordView: View {
     
     @State var showFileBrowser: Bool = false
     @State var isPlaying: Bool = false
+    @State var fileURL = URL(fileURLWithPath: "")
     
     var body: some View {
         ScrollView {
@@ -36,6 +37,8 @@ struct RechordView: View {
                 Button(action: {
                     let file = Bundle.main.url(forResource: "loop", withExtension: "wav")!
                     viewModel.loadAudio(from: file)
+                    viewModel.looping()
+                    isPlaying = false
                 })
                 {
                     Text("LOAD A TEST LOOP")
@@ -72,8 +75,20 @@ struct RechordView: View {
                         allowedContentTypes: [.audio],
                         allowsMultipleSelection: false
                     ) { result in
-                        let file = try! result.get().first
-                        viewModel.loadAudio(from: file!)
+                        do {
+                            fileURL = try result.get().first!
+                            if (CFURLStartAccessingSecurityScopedResource(fileURL as CFURL)) {
+                                Log(fileURL.absoluteString)
+                                viewModel.loadAudio(from: fileURL)
+                                isPlaying = false
+                                CFURLStopAccessingSecurityScopedResource(fileURL as CFURL)
+                                }
+                                else {
+                                    print("Permission error!")
+                                }
+                        } catch  {
+                            Log(error.localizedDescription, type: .error)
+                        }
                     }
         }
     }

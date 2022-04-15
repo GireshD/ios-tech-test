@@ -16,14 +16,13 @@ class RechordViewModel {
     private var files: [URL] = []
         
     func loadAudio(from url: URL) {
-        if files.contains(url){
-            return
-        }else{
-            files.append(url)
-        }
-        player = AudioPlayer(url: url, buffered: false)
-        player.isLooping = true
+        if (player != nil) { stop() }
+        player = AudioPlayer(url: url)
         mixer.addInput(player)
+    }
+    
+    func looping(){
+        player.isLooping = true
     }
     
     func play() {
