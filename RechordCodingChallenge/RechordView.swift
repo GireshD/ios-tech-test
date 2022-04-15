@@ -66,6 +66,10 @@ extension RechordView{
         }
     }
     
+    private var isPlayerAvailable: Bool{
+        return fileURL.absoluteString.count>8
+    }
+    
     private var buttons: some View {
         VStack(spacing: 15){
             
@@ -83,18 +87,14 @@ extension RechordView{
                     isPlaying = false
                 }
             
-            CustomButton(title: (isPlaying == true ?  "STOP" : "Play"))
+            CustomButton(title: (isPlaying  ?  "STOP" : "Play"))
                 .onTapGesture {
-                    isPlaying.toggle()
-                    if isPlaying {
-                        viewModel.play()
-                    }
-                    else {
-                        viewModel.stop()
+                    if viewModel.player != nil{
+                        isPlaying.toggle()
+                        isPlaying ?  viewModel.play() : viewModel.stop()
                     }
                 }
-            
-            
+                .opacity(isPlayerAvailable ? 1 : 0.5)
         }
     }
 }
